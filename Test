@@ -1,0 +1,25 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Create a 2D array with random values
+data = np.random.rand(10, 10)
+
+# Create a figure and axes
+fig, ax = plt.subplots()
+
+# Create the colormap plot
+im = ax.imshow(data, cmap='jet')
+
+# Add a colorbar
+cbar = ax.figure.colorbar(im, ax=ax)
+
+# Set labels for the colorbar
+cbar.ax.set_ylabel('Colorbar Label', rotation=-90, va="bottom")
+
+# Add a title and labels to the axes
+ax.set_title('2D Colormap')
+ax.set_xlabel('X-axis')
+ax.set_ylabel('Y-axis')
+
+# Show the plot
+plt.show()
