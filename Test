@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 data = np.random.rand(10, 10)
 
 # Create a figure and axes
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=plot_size)
 
 # Create the colormap plot
 im = ax.imshow(data, cmap='jet')
