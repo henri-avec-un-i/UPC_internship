@@ -21,5 +21,9 @@ ax.set_title('2D Colormap')
 ax.set_xlabel('X-axis')
 ax.set_ylabel('Y-axis')
 
-# Show the plot
+# Save the plot as an SVG file
+    if save_plot:
+        plt.savefig(plot_name, dpi=plot_resolution)
+    
+    # Show the plot
 plt.show()
